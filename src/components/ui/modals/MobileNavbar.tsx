@@ -1,7 +1,6 @@
 import { Box } from "@chakra-ui/react";
 import { CustomButton } from "../buttons/CustomButton";
 import { CustomSelect } from "../forms/CustomSelect";
-import { convertToSelectArray } from "@/utils/helpers";
 import { CustomInput } from "../forms/CustomInput";
 import { RiSearchLine } from "react-icons/ri";
 
@@ -36,7 +35,6 @@ const MobileNavbar = ({ isHomePage }: { isHomePage?: boolean }) => {
 								<CustomSelect
 									defaultValue={{ label: "Class", value: "Class" }}
 									placeholder="Class"
-									options={convertToSelectArray([])}
 									isDisabled={false}
 									onChange={() => {}}
 								/>
